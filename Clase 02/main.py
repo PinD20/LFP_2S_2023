@@ -81,7 +81,7 @@ floats = []
 arch2 = open ("prueba.aver")
 for linea2 in arch2.readlines():
     aux = linea2.split(" ") # aux queda como una lista que tiene ["int", "variable=5"]
-    aux2 = aux[1].split("=") #2 aux queda como una lista que tiene ["variable", "5"]
+    aux2 = aux[1].split("=") # aux2 queda como una lista que tiene ["variable", "5"]
     valor_con_salto_linea = aux2[1]
 
     if aux[0].startswith("int"):#Aquí se verifica con qué palabra comenzaba la línea
