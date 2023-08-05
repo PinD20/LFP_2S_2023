@@ -1,0 +1,5 @@
+SANTA_RÓSA = [
+    { "Cascada de los amantes" : 4 },
+    { "Laguna de Ayarza" : 5 },
+    { "Laguna del Pino" : 3 }
+] MIN, PROM, TOP
