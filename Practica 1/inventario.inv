@@ -1,0 +1,14 @@
+crear_producto Tomates;100;1.00;BodegaA
+crear_producto Manzanas;250;3.00;BodegaB
+crear_producto Peras;175;3.25;BodegaC
+crear_producto Plátanos;75;1.75;BodegaD
+crear_producto Queso;50;20.50;BodegaE
+crear_producto Helado;360;6.50;BodegaF
+crear_producto Arándanos;1000;0.50;BodegaG
+crear_producto Tomates;200;1.00;BodegaG
+crear_producto Manzanas;300;3.00;BodegaF
+crear_producto Peras;100;3.25;BodegaE
+crear_producto Plátanos;50;1.75;BodegaC
+crear_producto Queso;10;20.50;BodegaD
+crear_producto Helado;80;6.50;BodegaB
+crear_producto Arándanos;5;0.50;BodegaA

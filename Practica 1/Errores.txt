@@ -1,0 +1,5 @@
+Errores en consola:
+
+Línea 1: El producto "Tomates" que se intenta vender no existe en la bodega "BodegaB"
+Línea 7: El producto "Queso" a agregar stock no existe en la bodega "BodegaB"
+Línea 8: Se intentan vender más plátanos de los que hay en el inventario de "BodegaC"

@@ -1,0 +1,15 @@
+vender_producto Tomates;250;BodegaB
+vender_producto Arándanos;265;BodegaG
+vender_producto Plátanos;45;BodegaC
+vender_producto Queso;15;BodegaE
+vender_producto Manazanas;150;BodegaF
+agregar_stock Arándanos;150;BodegaA
+agregar_stock Queso;350;BodegaG
+vender_producto Plátanos;6;BodegaC
+agregar_stock Plátanos;1;BodegaC
+vender_producto Helado;188;BodegaF
+vender_producto Plátanos;6;BodegaC
+agregar_stock Queso;50;BodegaD
+agregar_stock Peras;1;BodegaE
+vender_producto Manzanas;250;BodegaB
+vender_producto Tomates;199;BodegaG

@@ -1,0 +1,14 @@
+Producto	Cantidad	Precio Unitario		Valor Total	    Ubicación
+------------------------------------------------------------------------------------------
+Tomates 	  100 		    $ 1.00 			$ 100.00	    BodegaA
+Arándanos	  155 		    $ 0.50 			$  77.50	    BodegaA
+Helado		   80 		    $ 6.50 			$ 520.00	    BodegaB
+Peras		  175 		    $ 3.25 			$ 568.75	    BodegaC
+Plátanos	   75 		    $ 1.75 			$ 131.25	    BodegaD
+Queso		   60 		    $20.50 			$1230.00	    BodegaD
+Queso		   35 		    $20.50 			$ 717.50	    BodegaE
+Peras		  101 		    $ 3.25 			$ 328.25	    BodegaE
+Helado		  172		    $ 6.50			$1118.00	    BodegaF
+Manzanas	  150		    $ 3.00			$ 450.00	    BodegaF
+Arándanos	  735		    $ 0.50			$ 367.50	    BodegaG
+Tomates		    1		    $ 1.00			$   1.00	    BodegaG
