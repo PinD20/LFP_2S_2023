@@ -2,7 +2,7 @@ vender_producto Tomates;250;BodegaB
 vender_producto Arándanos;265;BodegaG
 vender_producto Plátanos;45;BodegaC
 vender_producto Queso;15;BodegaE
-vender_producto Manazanas;150;BodegaF
+vender_producto Manzanas;150;BodegaF
 agregar_stock Arándanos;150;BodegaA
 agregar_stock Queso;350;BodegaG
 vender_producto Plátanos;6;BodegaC
