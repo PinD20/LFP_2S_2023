@@ -1,6 +1,7 @@
 # Para instalar el módulo "tabulate"
 # Abren una consola y colocan:
 #           pip install tabulate
+
 # Luego ya pueden importarlo como a continuación
 
 from tabulate import tabulate #Se importa el módulo instalado
@@ -14,6 +15,6 @@ tabla = [
             ["Peras", 175, 3.25, 568.75, "BodegaC"]     # Fila
         ]
 
-# Headers son los títulos de la tabla, en este caso puedo símplemente copiarlo como está
+# Headers son los títulos de la tabla, en este caso pueden simplemente copiarlo como está
 # porque siempre van a ser los mismos
 print(tabulate(tabla, headers=["Producto", "Cantidad", "Precio Unitario", "Valor Total", "Ubicación"]))
