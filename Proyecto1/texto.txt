@@ -1,0 +1,13 @@
+{
+    "errores":[
+        {
+            "No":1,
+            "descripcion":{
+                "lexema":"?",
+                "tipo":"lexico",
+                "columna":2,
+                "fila":1
+            }
+        }
+    ]
+}
