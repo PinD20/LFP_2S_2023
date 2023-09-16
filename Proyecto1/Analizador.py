@@ -114,6 +114,7 @@ class Analizador():
                 else:#Es estado de aceptación entonces se guarda token
                     self.tokens_reconocidos.append(Token('Entero', int(lexema), fila, columna - len(lexema)))
                     lexema = ""
+                    estado = 0
                     if ascii == 9 or ascii == 10 or ascii == 32:
                         pass
                     elif self.isSimboloValido(ascii):
@@ -126,9 +127,9 @@ class Analizador():
                         estado_anterior = 0
                     else:#Error
                         self.errores.append(Error(caracter, 'Léxico', columna - len(lexema), fila))
-                    #Reinicio del lexema
-                    lexema = ""
-                    estado = 0
+                        #Reinicio del lexema
+                        lexema = ""
+                        estado = 0
             
             elif estado == 10:
                 if estado_anterior == 0 or estado_anterior == 2:
