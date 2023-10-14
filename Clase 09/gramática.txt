@@ -1,0 +1,60 @@
+Lenguaje:
+    Claves = [
+        "producto", "precio", "cantidad"
+    ]
+
+    Registros = [
+        { "manzana", 2.5, 15 }
+        { "melon", 5, 10 }
+    ]
+
+    imprimir("hola");
+    conteo();
+    promedio("cantidad");
+
+
+
+Gramática:
+
+Terminales: tk_claves, tk_igual, tk_corA, tk_corC, tk_cadena, tk_coma,
+            tk_registros, tk_llaveA, tk_llaveC, tk_decimal, tk_entero,
+            tk_imprimir, tk_parA, tk_parC, tk_PyC, tk_conteo, tk_promedio
+
+No terminales: <inicio>, <claves>, <registros>, <funciones>
+Inicio: <inicio>
+Producciones:
+    <inicio> ::= <claves> <registros> <funciones>
+
+    <claves> ::= tk_claves tk_igual tk_corA tk_cadena <otra_clave> tk_corC
+    <otra_clave> ::= tk_coma tk_cadena <otra_clave>
+                   | ε
+
+    <registros> ::= tk_registros tk_igual tk_corA <registro> <otroRegistro> tk_corC
+    <registro> ::= tk_llaveA <valor> <otroValor> tk_llaveC
+    <valor> ::= tk_cadena
+              | tk_entero
+              | tk_decimal
+    <otroValor> ::= tk_coma <valor> <otroValor>
+                  | ε
+    <otroRegistro> ::= <registro> <otroRegistro>
+                  | ε
+
+    <funciones> ::= <funcion> <otraFuncion>
+
+    <otraFuncion> ::= <funcion> <otraFuncion>
+                    | ε
+    
+    //Una forma de manejar funciones
+    <funcion> ::= <imprimir>
+                | <conteo>
+                | <promedio>
+    <imprimir> ::= tk_imprimir tk_parA tk_cadena tk_parC tk_PyC
+
+
+    //Otra forma de manejar funciones
+    <funcion> ::= tk_palabraReservada tk_parA <parametros> tk_parC tk_PyC
+    <parametros> ::= <valor> <otroParametro>
+                   | ε
+    <otroParametro> ::= tk_coma <valor> <otroParametro>
+                      | ε
+    
