@@ -72,7 +72,7 @@ def llenarListaTokens():
     imprimir("conteo de registros:");
     conteo();
     imprimir("promedio de cantidad:");
-    promedio(cantidad);
+    promedio("cantidad");
     '''
 
 if __name__ == '__main__':

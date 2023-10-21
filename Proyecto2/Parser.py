@@ -10,6 +10,22 @@ class Parser():
         tokenNuevo = Token('EOF', 'EOF', 0, 0)
         self.tokens.append(tokenNuevo)
 
+    def recuperar(self, nombreToken):
+        while self.tokens[0].nombre != 'EOF':
+            if self.tokens[0].nombre == nombreToken:
+                self.tokens.pop(0)
+                break
+            else:
+                self.tokens.pop(0)
+
+    def recuperarDos(self, nombreToken1, nombreToken2):
+        while self.tokens[0].nombre != 'EOF':
+            if self.tokens[0].nombre == nombreToken1 or self.tokens[0].nombre == nombreToken2:
+                self.tokens.pop(0)
+                break
+            else:
+                self.tokens.pop(0)
+
     def parsear(self):
         self.inicio()
 
@@ -40,8 +56,10 @@ class Parser():
                 else:
                     print("Error: se esparaba corchete de apertura")
             else:
+                self.recuperar("tk_corA")
                 print("error: se esperaba signo igual")
         else:
+            self.recuperarDos("tk_igual", "tk_claves")
             print("error: Se esperarba palabra reservada Claves")
 
     #<otra_clave> ::= tk_coma tk_cadena <otra_clave>
@@ -54,6 +72,7 @@ class Parser():
                 self.listaClaves.append(clave.lexema)
                 self.otraClave()
             else:
+                self.recuperarDos("tk_coma", "tk_corC")
                 print("error: se esperaba una cadena")
         else:
             pass#Nada porque se acepta épsilon
